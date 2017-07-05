@@ -1,0 +1,11 @@
+<my-header tittle="登录"></my-header>
+<section class="contents content">
+	<div class="loginss">
+		<ul>
+			<li><label for="name">用户名</label><input type="text" placeholder="请输入用户名" id="name" ng-model = "name"/></li>
+			<li><label for="pass">账户密码</label><input type="password" placeholder="请输入账户密码" id="pass" ng-model = "pwd"/></li>
+			<li ng-click="logined()"><span>登录</span></li>
+		</ul>
+	</div>
+	<my-dialog ng-show="isShow" img="./images/tan_03.png" content="{{infos}}" btnname="确定" on-send="bundle()"></my-dialog>
+</section>

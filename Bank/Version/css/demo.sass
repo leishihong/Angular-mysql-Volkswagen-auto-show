@@ -1,0 +1,593 @@
+body
+    position: absolute
+    width: 100%
+    bottom: 0
+    top: 0
+    display: -webkit-flex
+    flex-direction: column
+    font-size: 16px
+    background: #ededed
+    overflow: hidden
+.head
+    height: .42rem
+    line-height: .42rem
+    background: #ffffff
+    border-bottom: 1px solid #ccc
+    .back
+        left: .1rem
+        top: 0
+        i
+            font-size: .14rem
+        span
+            font-size: .14rem
+    .more
+        right: .1rem
+        top: 0
+    h3
+        text-align: center
+        color: #333
+        font-size: .14rem
+        
+.tishi
+    height: .28rem
+    line-height: .28rem
+    text-align: center
+    background: #ffffff
+    color: red
+    font-size: .14rem  
+    i
+        font-size: .14rem      
+        
+        
+ 
+.content
+    flex: 1
+    overflow-y: auto  
+    height: auto  
+   
+    .tou
+        background: #ffffff
+        width: 100%
+        
+        
+        dl
+            display: -webkit-flex
+            justify-content: space-between
+            padding-top: .05rem
+            padding: .1rem
+            dt
+                width: .35rem
+                height: .35rem
+                img
+                    width: 100%
+                    height: 100%
+            dd
+                flex: 1
+                padding-left: .12rem
+                h3
+                    font-size: .14rem
+                    color: #666
+                    font-weight: bold
+                p
+                    font-size: .12rem
+                    color: #999
+    .list
+        margin-top: 15px
+        background: #ffffff
+        ul
+            padding: .1rem
+            box-sizing: border-box
+            display: -webkit-flex 
+            justify-content: space-between
+            width: 100%
+            flex-wrap: wrap
+            li
+                width: 32%
+                border-right: 1px solid #ccc
+                text-align: center
+                span
+                    display: block
+                    color: #666
+                    font-size: .14rem
+                    margin-top: .05rem
+                    margin-bottom: .05rem
+                span:nth-child(1)
+                    color: #999
+            li:nth-child(3)
+                border: none
+    .right
+        height: .4rem
+        margin-top: 15px
+        background: #ffffff
+        line-height: .4rem
+        padding-left: .1rem
+        padding-right: .1rem    
+        display: -webkit-flex
+        justify-content: space-between
+        font-size: .14rem    
+        i 
+            font-size: .14rem  
+    .cards_datas
+        margin-top: .14rem       
+    .datas
+        
+        p
+            height: .4rem
+            line-height: .4rem
+            font-size: .14rem
+            padding-left: .1rem
+            padding-right: .1rem
+            span
+                font-size: .14rem
+        .yue
+            font-size: .12rem
+            color: #999
+        ul 
+            background: #fff
+            padding-left: .1rem
+            padding-right: .1rem
+            li
+                height: .4rem
+                line-height: .4rem
+                display: -webkit-flex
+                justify-content: space-between
+                border-bottom: 1px solid #eee
+                label
+                    width: 30%
+                    font-size: .14rem
+                input
+                    flex: 1
+    span.sure
+        display: block
+        width: 90%
+        height: .4rem
+        line-height: .4rem
+        margin: 0 auto
+        margin-top: .5rem
+        background: #fe3f4e
+        color: #fff
+        font-size: .14rem
+        text-align: center
+        border-radius: 10px
+    .info
+        padding: .1rem
+        dl
+            dt img
+                width: 100%
+                height: 100%
+            dd
+                p
+                    height: .4rem
+                    line-height: .4rem
+                    text-align: center
+                    font-size: .14rem
+                    color: #333
+    .info_list
+        background: #fff
+        ul li 
+            padding-left: .1rem
+            padding-right: .1rem
+            display: -webkit-flex
+            justify-content: space-between 
+            height: .42rem
+            line-height: .42rem
+            border-bottom: 1px solid #eee
+            span
+                font-size: .14rem
+            span:nth-child(2)
+                font-size: .14rem
+        ul li:nth-child(4)
+            span
+                flex: 1
+                text-align: center
+                color: #fe3f4e
+                
+    .Dialog
+        position: fixed
+        top: 0 
+        bottom: 0
+        width: 100%
+        background: rgba(0,0,0,.4)        
+    .mark
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 80%
+        min-height: 1rem
+        background: #fff
+        border-radius: 10px
+        padding-bottom: 20px
+       
+        dl
+            
+            dt
+                width: 1rem
+                height: 1rem
+                margin: auto
+                margin-top: 15px
+                
+                img
+                    width: 100%
+                    height: 100%
+                
+            dd
+                text-align: center
+                height: .35rem
+                line-height: .35rem
+                font-size: .14rem
+        i
+            position: absolute
+            right: .05rem
+            top: .05rem
+        .du
+            font-size: .14rem
+            padding-bottom: 15px
+            text-align: center
+        p
+            width: 80%
+            height: .4rem
+            line-height: .4rem
+            color: #fff
+            font-size: .14rem
+            background: #fe3f4e
+            margin-bottom: 20px
+            margin: auto
+            text-align: center
+            border-radius: 10px
+    .recharge
+        background: #fff
+        h3
+            height: .4rem
+            line-height: .4rem
+            padding-left: .1rem
+            border-bottom: 1px solid #eee
+            font-size: .14rem
+            color: #434343 
+        ul 
+            padding-left: .1rem
+            padding-right: .1rem
+            display: -webkit-flex
+            justify-content: space-between
+            flex-wrap: wrap
+            width: 100%
+            box-sizing: border-box
+            padding-top: .1rem
+
+            li
+                width: 30%
+                height: .42rem
+                line-height: .42rem
+                text-align: center
+                border: 1px solid #ccc
+                border-radius: 8px
+                margin-bottom: .1rem
+                font-size: .14rem
+                color: #333
+            .bgColor
+                border: 1px solid #00f
+                color: #00f
+    .confirm_price
+        background: #fff
+        padding-left: .1rem
+        padding-right: .1rem
+        dl
+            display: -webkit-flex
+            justify-content: space-between  
+            padding-top: .05rem
+            padding-bottom: .05rem
+            dd
+                flex: 1 
+                padding-left: .1rem
+                h3
+                    font-size: .14rem
+                p
+                    font-size: .12rem
+                    color: #999
+            dt
+                width: .34rem
+                height: .34rem
+                img
+                    width: 100%
+                    height: 100% 
+    .confirm_card
+        margin-top: .14rem
+        dl
+            border-bottom: 1px solid #eee
+            align-items: center
+            dd i
+                font-size: 30px
+            .icon-yuanxingxuanzhongfill
+                color: lawngreen
+            .icon-yuanxingweixuanzhong
+                color: #ccc
+        dl dd:nth-child(2)
+            flex: 10
+            
+    .zi
+        height: .4rem
+        margin-top: .05rem
+        padding-left: .1rem
+        padding-right: .1rem
+        width: 100%
+        background: #fff
+        box-sizing: border-box
+        margin-top: 15px
+        input
+            width: 100%
+            height: 100%
+            padding-left: .1rem
+    .reset_optho
+        padding-top: .25rem
+        padding-bottom: .25rem
+        text-align: center
+        h3 
+            font-size: .14rem
+            span
+                display: block
+    .reset_yan
+        background: #fff
+        height: .4rem
+        line-height: .4rem
+        display: -webkit-flex
+        justify-content: space-between
+        padding-left: .1rem
+        padding-right: .1rem
+        span
+            width: 30%
+            display: inline-block
+            text-align: center
+            font-size: .12rem
+            color: #00f
+            border-left: 1px solid #eee
+        input
+            padding-right: .05rem
+            flex: 1
+    .record
+        p
+            background: #f5f5f5
+            height: .4rem
+            line-height: .4rem
+            padding-left: .1rem
+            font-size: .14rem
+        dl
+            background: #fff
+            padding-top: .1rem
+            padding-bottom: .1rem
+            border-bottom: 1px solid #eee
+            display: -webkit-flex
+            padding-left: .1rem
+            padding-right: .1rem
+            justify-content: space-between
+            dt
+                width: .34rem
+                height: .34rem
+                img
+                    width: 100%
+                    height: 100%
+            dd
+                h3
+                    font-size: .14rem
+                span
+                    display: block
+                    font-size: .12rem
+                    color: #333
+        dl dd:nth-child(2)
+            flex: 1
+            padding-left: .12rem
+            font-size: .14rem
+    .qing
+        background: #fff
+        ul
+            padding-left: .1rem
+            padding-right: .1rem
+            li
+                display: -webkit-flex 
+                justify-content: space-between
+                height: .42rem
+                line-height: .42rem
+                border-bottom: 1px solid #eee
+                span
+                    font-size: .14rem
+                    color: #999
+                span:nth-child(2)
+                    color: #666      
+                    
+    .xiao
+        height: .42rem
+        line-height: .42rem
+        padding-right: .1rem
+        padding-left: .1rem
+        background: #fff                
+        margin-top: .14rem
+        display: -webkit-flex
+        justify-content: space-between
+        span 
+            flex: 1
+            font-size: .14rem
+        input
+            width: 30%
+            height: 100%           
+    .jisuanqi
+        position: absolute 
+        bottom: 0  
+        background: #fff
+        width: 100%
+        table
+            border-collapse: collapse
+            width: 100%
+            tr
+                width: 100%
+                td
+                    border: 1px solid #eee  
+                    width: 25%
+                    height: .5rem
+                    line-height: .5rem
+                    text-align: center  
+                    font-size: .16rem
+    .sucess
+        background: #fff
+        padding-left: .1rem
+        padding-right: .1rem
+        padding-top: .14rem
+        padding-bottom: .14rem
+        box-sizing: border-box
+        dl 
+            dt 
+                width: .5rem
+                height: .5rem
+                margin: auto
+                img
+                    width: 100%
+                    height: 100%
+            dd
+                text-align: center
+                padding-top: .05rem
+                font-size: .14rem
+                                  
+                              
+    .dialog    
+        position: absolute
+        top: 0
+        bottom: 0
+        width: 100%
+        background: rgba(0,0,0,.2)
+        
+        .resetNew
+            position: absolute
+            bottom: 0
+            width: 100%
+            background: #f5f5f5
+            h3
+                height: .4rem
+                line-height: .4rem
+                border-bottom: 1px solid #eee
+                text-align: center           
+                position: relative
+                i
+                    position: absolute
+                    right: .1rem
+                    top: 0
+            .pass
+                height: .4rem
+                width: 80%
+                margin: .14rem auto
+                input
+                    width: 100%
+                    height: 100%
+                    text-align: center
+                    background: #f5f5f5
+            .kami
+                width: 70%
+                margin: 25px auto
+                display: -webkit-flex
+                justify-content: space-between
+                li
+                    width: 15%
+                    height: .4rem
+                    line-height: .4rem
+                    font-size: .16rem
+                    border-bottom: 1px solid #666
+                    text-align: center
+                    font-size: .16rem
+            .resetNum
+                background: #fff
+                p
+                    text-align: center
+                    font-size: .12rem
+                    width: 100%
+                    padding-top: .08rem
+                    padding-bottom: .08rem
+                    background: #f5f5f5
+                ul
+                    display: -webkit-flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    width: 100%
+                    li
+                        width: 33.3%
+                        height: .42rem
+                        line-height: .42rem
+                        text-align: center
+                        font-size: .14rem
+                        border: 1px solid #eee
+                        box-sizing: border-box
+               
+
+
+
+
+
+
+
+
+
+
+
+
+    .login
+        position: fixed
+        top: 0 
+        bottom: 0
+        width: 100%
+        background: rgba(0,0,0,.4)        
+        .ligin_mark
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            min-width: 90%
+            min-height: 1.5rem
+            background: #fff
+            border-radius: 10px
+            padding-bottom: 20px
+            ul li
+                padding-left: .12rem
+                padding-right: .12rem
+                height: .42rem
+                line-height: .42rem
+                display: -webkit-flex
+                justify-content: space-between
+                input
+                    flex: 1
+                label
+                    width: 30%
+                span
+                    display: inline-block
+                    width: 90%
+                    height: .42rem
+                    color: #fff
+                    background: #fe3f4e
+                    text-align: center
+                    border-radius: 10px
+                    margin: auto
+                    margin-top: 15px
+.contents
+    flex: 1
+    height: auto 
+    .loginss
+        padding-top: .14rem
+        background: #fff
+        ul li
+            padding-left: .12rem
+            padding-right: .12rem
+            height: .42rem
+            line-height: .42rem
+            display: -webkit-flex
+            justify-content: space-between
+            input
+                flex: 1
+            label
+                width: 30%
+        ul li:nth-child(3)
+            margin-top: 15px
+            padding-bottom: 20px    
+            span
+                display: inline-block
+                width: 90%
+                height: .42rem
+                color: #fff
+                background: #fe3f4e
+                text-align: center
+                border-radius: 10px
+                margin: auto                    

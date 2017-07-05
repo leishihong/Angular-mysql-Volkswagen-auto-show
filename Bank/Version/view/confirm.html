@@ -1,0 +1,41 @@
+<my-header tittle="确认订单" on-send="recharge()"></my-header>
+<section class="content">
+	<div class="confirm_price">
+		<dl>
+			<dt>
+				<img src="./images/tu_06.png" alt="" />
+			</dt>
+			<dd>
+				<h3><span>￥</span><span>{{custom | number:2}}</span></h3>
+				<p><span>卡号：</span><span>{{boundCard}}</span></p>
+			</dd>
+		</dl>
+	</div>
+	<div class="confirm_price confirm_card">
+		<dl>
+			<dt>
+				<img src="./images/card_03.png" alt="" />
+			</dt>
+			<dd>
+				<h3>银行卡支付</h3>
+				<p><span>安全极速支付，无需开通网银</span></p>
+			</dd>
+			<dd>
+				<my-xuan></my-xuan>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<img src="./images/card_06.png" alt="" />
+			</dt>
+			<dd>
+				<h3>卡资金归集</h3>
+				<p><span>付款卡仅支持非记名卡或本人记名卡</span></p>
+			</dd>
+			<dd>
+				<my-xuan></my-xuan>
+			</dd>
+		</dl>
+	</div>
+	<span class="sure" ng-click="cards()">确认支付￥{{custom | number:2}}元</span>
+</section>

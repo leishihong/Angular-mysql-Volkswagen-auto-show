@@ -1,0 +1,39 @@
+<my-header tittle="卡资金归集" on-send="confirm()"></my-header>
+<section class="content">
+	<div class="confirm_price">
+		<dl>
+			<dt>
+				<img src="./images/tu_06.png" alt="" />
+			</dt>
+			<dd>
+				<h3><span>￥</span><span>{{custom | number:2}}</span></h3>
+				<p><span>卡号：</span><span>{{boundCard}}</span></p>
+			</dd>
+		</dl>
+	</div>
+	<div class="datas cards_datas">
+		
+		<ul>
+			<li><label for="card">卡号</label><input type="text" placeholder="请输入正面卡号(19位数字)"/ id="card" ng-model="kahao" ></li>
+			<li>
+				<label for="cardpass">卡密码</label>
+				<input type="password" placeholder="请输入卡背面密码(6位数字)" id="cardpass" ng-model="kami"/>
+			</li>
+		</ul>
+	</div>
+	<span class="sure"  ng-click="cards()">确认</span>
+	<my-dialog ng-show="isShow" img="{{src}}" content="{{number}}？" info="{{yue}}" btnname="确定" on-send="bundle()"></my-dialog>
+	<!--<div class="Dialog" ng-show="isShow" ng-click="dialog()">
+		<div class="mark" >
+			<dl>
+				<dt>
+					<img src="./images/tan_03.png" alt="" />
+					
+				</dt>
+				<dd>资金归集成功</dd>
+			</dl>
+			<i class="iconfont icon-close f22" ng-click="bundle()"></i>
+			<p ng-click="bundle()" ui-sref="fukaun">确认</p>
+		</div>
+	</div>-->
+</section>

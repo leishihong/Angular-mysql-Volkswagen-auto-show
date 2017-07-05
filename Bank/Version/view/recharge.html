@@ -1,0 +1,22 @@
+<my-header tittle="充值" on-send="Bang()"></my-header>
+<section class="content">
+	<div class="datas">
+		<ul>
+			<li><label for="card">卡号</label><span>{{boundCard}}</span></li>
+		</ul>
+		<p class="yue">卡内余额：¥<span>{{boundPrice}}</span>，最多可充值¥<span>{{boundMoreprice}}</span></p>
+	</div>
+	<div class="recharge">
+		<h3>请选择金额</h3>
+		<ul>
+			<li>100元</li>
+			<li>300元</li>
+			<li>500元</li>
+			<li>1000元</li>
+			<li>2000元</li>
+			<li class="ziding">自定义</li>
+		</ul>
+	</div>
+	<p class="zi"><input type="text" placeholder="请输入自定义金额"  ng-model="custom" readonly="false" /></p>
+	<span class="sure"  ng-click="cards()">下一步</span>
+</section>

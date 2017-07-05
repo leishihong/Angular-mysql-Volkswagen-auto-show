@@ -1,0 +1,35 @@
+<my-header tittle="卡信息" on-send="Home()"></my-header>
+<section class="content">
+	<div class="info">
+		<dl>
+			<dt>
+				<img src="./images/ka_03.png" alt="" />
+			</dt>
+			<dd>
+				<p><span>余额</span><span>{{price}}</span></p>
+			</dd>
+		</dl>
+	</div>
+	<div class="info_list">
+		<ul>
+			<li  ng-click="recharge()"><span>充值</span><span class="iconfont icon-arrowright f22"></span></li>
+			<li ui-sref="record"><span>交易记录</span><span class="iconfont icon-arrowright f22"></span></li>
+			<li ui-sref="reset"><span>重置密码</span><span class="iconfont icon-arrowright f22"></span></li>
+			<li  ng-click="unbundle()"><span>解除绑定</span></li>
+		</ul>
+	</div>
+	<my-dialog ng-show="isShow" img="./images/bang_03.png" content="确定要解除绑定吗？" btnname="确定解绑" on-send="bundle()"></my-dialog>
+	<!--<div class="Dialog" ng-show="isShow">
+		<div class="mark" >
+			<dl>
+				<dt>
+					<img src="./images/tan_05.png" alt="" />
+					
+				</dt>
+				<dd>确定要解除绑定吗？</dd>
+			</dl>
+			<i class="iconfont icon-close f22" ng-click="bundle()"></i>
+			<p ng-click="bundle()">解除绑定</p>
+		</div>
+	</div>-->
+</section>

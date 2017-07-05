@@ -1,0 +1,24 @@
+
+<my-header tittle="凯丹会员中心" on-send="Login()"></my-header>
+<!--主体信息-->
+<section class="content">
+	<div class="tou">
+		<dl>
+			<dt>
+				<img src="./images/tou.png" alt="" />
+			</dt>
+			<dd>
+				<h3>{{yong}}</h3>
+				<p><span>ID：</span><span>{{id}}</span></p>
+			</dd>
+		</dl>
+	</div>
+	<div class="list">
+		<ul>
+			<li><span>积分</span><span>100</span></li>
+			<li><span>签到</span><span>1</span></li>
+			<li><span>关注店铺</span><span>0</span></li>
+		</ul>
+	</div>
+	<p class="right" ng-click="hui()" ><span>我的会员卡</span><i class="iconfont icon-arrowright f22"></i></p>
+</section>

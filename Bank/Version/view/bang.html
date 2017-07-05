@@ -1,0 +1,29 @@
+<my-header tittle="绑定卡片" on-send="Ka()"></my-header>
+
+<div class="tishi">
+	<i class="iconfont icon-tishi f22"></i><span>仅能绑定与您购物卡登记信息一致的卡片</span>
+</div>
+<section class="content">
+	<div class="datas">
+		<p>卡信息</p>
+		<ul>
+			<li><label for="card">卡号</label><input type="text" placeholder="请输入正面卡号(19位数字)"/ id="card" ng-model="cards"></li>
+			<li>
+				<label for="cardpass">卡密码</label>
+				<input type="password" placeholder="请输入卡背面密码(6位数字)" id="cardpass" ng-model="cardPass"/>
+			</li>
+		</ul>
+	</div>
+	<div class="datas">
+		<p>持卡人信息</p>
+		<ul>
+			<li><label for="name">姓名</label><input type="text" placeholder="请输入购卡时登记的姓名" id="name"/ ng-model="boundName"></li>
+			<li>
+				<label for="idcard">身份证号</label>
+				<input type="text" placeholder="请输入购卡水等级的身份证号码" id="idcard" ng-model="cardId"/>
+			</li>
+		</ul>
+	</div>
+	<span class="sure" ng-click="bang()">确认绑定</span>
+	<my-dialog ng-show="isShow" img="./images/tan_03.png" content="{{infos}}" btnname="确定" on-send="bundle()"></my-dialog>
+</section>
